@@ -1,4 +1,4 @@
-class Gossip
+class gossip
     attr_reader :author, :content 
 
     def initialize(author, content)

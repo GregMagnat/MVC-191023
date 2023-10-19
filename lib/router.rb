@@ -1,10 +1,11 @@
 require 'controller'
 
-class Router
+class router
 
 #On veut qu'un "Router.new" lancé par app.rb, crée automatique une instance "@controller"
   def initialize
     @controller =  Controller.new
+    @view = View.new
   end 
 
 #rappelle-toi que l'on fait "Router.new.perform" dans app.rb => après initialize, on définit donc perform.
